@@ -1,0 +1,45 @@
+//
+//  LYHeadNews.pch
+//  LYHeadNews
+//
+//  Created by liyang on 2018/11/6.
+//  Copyright © 2018 kosien. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+
+
+
+#pragma mark -------------------------Controller
+
+
+
+
+#pragma mark -------------------------ThirdPart
+
+
+
+
+
+#pragma mark -------------------------Category
+
+
+
+
+
+#pragma mark -------------------------System
+
+
+
+
+
+#pragma mark -------------------------System
+
+#endif /* LYHeadNews_pch */
