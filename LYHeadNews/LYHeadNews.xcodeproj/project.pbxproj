@@ -14,6 +14,11 @@
 		C65759E7219180F900F59542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65759E5219180F900F59542 /* LaunchScreen.storyboard */; };
 		C65759EA219180F900F59542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C65759E9219180F900F59542 /* main.m */; };
 		C65759F4219199D100F59542 /* AppDelegate+RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65759F2219199D100F59542 /* AppDelegate+RootController.m */; };
+		C68FDA032192D12A00C90521 /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9F82192D12A00C90521 /* NSString+Valid.m */; };
+		C68FDA042192D12A00C90521 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FB2192D12A00C90521 /* Tools.m */; };
+		C68FDA052192D12A00C90521 /* UIView+LYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */; };
+		C68FDA062192D12A00C90521 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */; };
+		C68FDA072192D12A00C90521 /* UIImageView+RotateImgV.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FDA022192D12A00C90521 /* UIImageView+RotateImgV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,17 @@
 		C65759F1219197F700F59542 /* LYHeadNews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHeadNews.pch; sourceTree = "<group>"; };
 		C65759F2219199D100F59542 /* AppDelegate+RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootController.m"; sourceTree = "<group>"; };
 		C65759F3219199D100F59542 /* AppDelegate+RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootController.h"; sourceTree = "<group>"; };
+		C68FD9F82192D12A00C90521 /* NSString+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Valid.m"; sourceTree = "<group>"; };
+		C68FD9F92192D12A00C90521 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		C68FD9FA2192D12A00C90521 /* LYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
+		C68FD9FB2192D12A00C90521 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		C68FD9FC2192D12A00C90521 /* UIImageView+RotateImgV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RotateImgV.h"; sourceTree = "<group>"; };
+		C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYExtension.m"; sourceTree = "<group>"; };
+		C68FD9FE2192D12A00C90521 /* NSString+Valid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Valid.h"; sourceTree = "<group>"; };
+		C68FD9FF2192D12A00C90521 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		C68FDA012192D12A00C90521 /* UIView+LYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYExtension.h"; sourceTree = "<group>"; };
+		C68FDA022192D12A00C90521 /* UIImageView+RotateImgV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RotateImgV.m"; sourceTree = "<group>"; };
 		E65EFC5831ED3034C7B60973 /* Pods-LYHeadNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHeadNews.debug.xcconfig"; path = "Target Support Files/Pods-LYHeadNews/Pods-LYHeadNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +83,9 @@
 		C65759D9219180F200F59542 /* LYHeadNews */ = {
 			isa = PBXGroup;
 			children = (
+				C68FD9F62192D0EF00C90521 /* Classes */,
+				C68FD9F52192D0DA00C90521 /* Resource */,
+				C68FD9F42192D0C400C90521 /* Libs */,
 				C65759DA219180F200F59542 /* AppDelegate.h */,
 				C65759DB219180F200F59542 /* AppDelegate.m */,
 				C65759F3219199D100F59542 /* AppDelegate+RootController.h */,
@@ -83,11 +102,59 @@
 			children = (
 				C65759E3219180F900F59542 /* Assets.xcassets */,
 				C65759E5219180F900F59542 /* LaunchScreen.storyboard */,
-				C65759E9219180F900F59542 /* main.m */,
 				C65759E8219180F900F59542 /* Info.plist */,
+				C65759E9219180F900F59542 /* main.m */,
 				C65759F1219197F700F59542 /* LYHeadNews.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C68FD9F42192D0C400C90521 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				C68FD9F72192D12A00C90521 /* Category */,
+				C68FDA082192D33200C90521 /* BaseActions */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		C68FD9F52192D0DA00C90521 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C68FD9F62192D0EF00C90521 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C68FD9F72192D12A00C90521 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C68FD9FA2192D12A00C90521 /* LYCategory.h */,
+				C68FD9FF2192D12A00C90521 /* Tools.h */,
+				C68FD9FB2192D12A00C90521 /* Tools.m */,
+				C68FD9FE2192D12A00C90521 /* NSString+Valid.h */,
+				C68FD9F82192D12A00C90521 /* NSString+Valid.m */,
+				C68FDA012192D12A00C90521 /* UIView+LYExtension.h */,
+				C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */,
+				C68FD9F92192D12A00C90521 /* NSDateFormatter+Category.h */,
+				C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */,
+				C68FD9FC2192D12A00C90521 /* UIImageView+RotateImgV.h */,
+				C68FDA022192D12A00C90521 /* UIImageView+RotateImgV.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C68FDA082192D33200C90521 /* BaseActions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseActions;
 			sourceTree = "<group>";
 		};
 		DD05CBA685290A6471A5FF4A /* Frameworks */ = {
@@ -104,7 +171,6 @@
 				E65EFC5831ED3034C7B60973 /* Pods-LYHeadNews.debug.xcconfig */,
 				AFFDF0BCD8B3271772D5A447 /* Pods-LYHeadNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,10 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68FDA072192D12A00C90521 /* UIImageView+RotateImgV.m in Sources */,
 				C65759DF219180F200F59542 /* ViewController.m in Sources */,
+				C68FDA062192D12A00C90521 /* NSDateFormatter+Category.m in Sources */,
 				C65759EA219180F900F59542 /* main.m in Sources */,
 				C65759F4219199D100F59542 /* AppDelegate+RootController.m in Sources */,
+				C68FDA042192D12A00C90521 /* Tools.m in Sources */,
+				C68FDA052192D12A00C90521 /* UIView+LYExtension.m in Sources */,
 				C65759DC219180F200F59542 /* AppDelegate.m in Sources */,
+				C68FDA032192D12A00C90521 /* NSString+Valid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +412,7 @@
 			baseConfigurationReference = E65EFC5831ED3034C7B60973 /* Pods-LYHeadNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZE26F429EL;
@@ -363,6 +435,7 @@
 			baseConfigurationReference = AFFDF0BCD8B3271772D5A447 /* Pods-LYHeadNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZE26F429EL;
