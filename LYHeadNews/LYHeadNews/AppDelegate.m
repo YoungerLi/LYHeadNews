@@ -40,23 +40,23 @@
 #pragma mark - **********系统前后台切换
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    NSLog(@"程序中断");
+//    NSLog(@"程序中断");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    NSLog(@"程序进入后台");
+//    NSLog(@"程序进入后台");
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    NSLog(@"程序将要从后台进入前台");
+//    NSLog(@"程序将要从后台进入前台");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    NSLog(@"程序激活");
+//    NSLog(@"程序激活");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    NSLog(@"结束程序");
+//    NSLog(@"结束程序");
 }
 
 @end

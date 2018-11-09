@@ -4,7 +4,7 @@
 //
 //  Created by liyang on 17/6/30.
 //  Copyright © 2017年 kosienDGL. All rights reserved.
-//  跟视图控制器
+//  根视图控制器
 
 #import "AppDelegate.h"
 

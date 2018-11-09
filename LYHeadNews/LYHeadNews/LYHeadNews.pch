@@ -19,6 +19,15 @@
 
 #pragma mark -------------------------Controller
 
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
+#import "HomeViewController.h"
+#import "MelonVideoViewController.h"
+#import "HeadNewsViewController.h"
+#import "LittleVideoViewController.h"
+
+
 
 
 
