@@ -11,6 +11,7 @@
 #import "Tools.h"
 #import "NSString+Valid.h"
 #import "UIView+LYExtension.h"
+#import "UITabBar+Badge.h"
 #import "UIImageView+RotateImgV.h"
 #import "NSDateFormatter+Category.h"
 
@@ -32,6 +33,8 @@
 #define LineColor [UIColor colorWithRed:211/255.0f green:211/255.0f blue:211/255.0f alpha:1]    //d3d3d3
 #define BACKGROUNDCOLOR [UIColor colorWithRed:246/255.0f green:246/255.0f blue:246/255.0f alpha:1] //f6f6f6
 #define WHITECOLOR [UIColor whiteColor]
+#define TABBAR_GRAY_COLOR [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1.0f]
+#define TABBAR_ORANGE_COLOR [UIColor colorWithRed:0.97 green:0.35 blue:0.35 alpha:1.0f]
 
 #define RandomColor [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]
 #define RGB_COLOR(r, g, b, al) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:al]

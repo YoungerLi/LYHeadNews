@@ -8,10 +8,7 @@
 
 #import "BaseTabBarController.h"
 
-#define TABBAR_GRAY_COLOR [UIColor colorWithRed:0.31 green:0.31 blue:0.31 alpha:1.0f]
-#define TABBAR_ORANGE_COLOR [UIColor colorWithRed:0.97 green:0.35 blue:0.35 alpha:1.0f]
-
-@interface BaseTabBarController ()
+@interface BaseTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -21,6 +18,7 @@
     [super viewDidLoad];
     self.tabBar.barTintColor = [UIColor colorWithRed:0.95f green:0.95f blue:0.95f alpha:1.0f];
     self.tabBar.translucent = NO;
+    self.delegate = self;
     
     [self addChildViewController:[HomeViewController class] title:@"首页" imageName:@"home_tabbar" selectedImageName:@"home_tabbar_press"];
     [self addChildViewController:[MelonVideoViewController class] title:@"西瓜视频" imageName:@"video_tabbar" selectedImageName:@"video_tabbar_press"];
@@ -35,8 +33,8 @@
     BaseNavigationController *NVC = [[BaseNavigationController alloc] initWithRootViewController:VC];
     //文字
     NVC.tabBarItem.title = title;
-    NSDictionary *attribute = @{NSFontAttributeName:[UIFont systemFontOfSize:10], NSForegroundColorAttributeName:TABBAR_GRAY_COLOR};
-    NSDictionary *selectAttribute = @{NSFontAttributeName:[UIFont systemFontOfSize:10], NSForegroundColorAttributeName:TABBAR_ORANGE_COLOR};
+    NSDictionary *attribute = @{NSFontAttributeName:[UIFont systemFontOfSize:10.5], NSForegroundColorAttributeName:TABBAR_GRAY_COLOR};
+    NSDictionary *selectAttribute = @{NSFontAttributeName:[UIFont systemFontOfSize:10.5], NSForegroundColorAttributeName:TABBAR_ORANGE_COLOR};
     [NVC.tabBarItem setTitleTextAttributes:attribute forState:UIControlStateNormal];            //一般状态
     [NVC.tabBarItem setTitleTextAttributes:selectAttribute forState:UIControlStateSelected];    //选中状态
     NVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);  //上移3pt

@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     //修改状态栏颜色（需在plist里加添 View controller-based status bar appearance = NO）
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     //设置导航条的背景颜色
     //方法1

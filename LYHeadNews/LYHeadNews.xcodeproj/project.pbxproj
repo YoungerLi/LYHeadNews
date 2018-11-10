@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		733B90E0BF730974077FBE08 /* libPods-LYHeadNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C27866684A3430F7B602B0 /* libPods-LYHeadNews.a */; };
+		C643ECB421967A1B007C060D /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = C643ECB221967A1A007C060D /* UITabBar+Badge.m */; };
 		C65759DC219180F200F59542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C65759DB219180F200F59542 /* AppDelegate.m */; };
 		C65759E4219180F900F59542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65759E3219180F900F59542 /* Assets.xcassets */; };
 		C65759E7219180F900F59542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65759E5219180F900F59542 /* LaunchScreen.storyboard */; };
@@ -76,6 +77,8 @@
 /* Begin PBXFileReference section */
 		94C27866684A3430F7B602B0 /* libPods-LYHeadNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYHeadNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFDF0BCD8B3271772D5A447 /* Pods-LYHeadNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYHeadNews.release.xcconfig"; path = "Target Support Files/Pods-LYHeadNews/Pods-LYHeadNews.release.xcconfig"; sourceTree = "<group>"; };
+		C643ECB221967A1A007C060D /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		C643ECB321967A1A007C060D /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
 		C65759D7219180F200F59542 /* LYHeadNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYHeadNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65759DA219180F200F59542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C65759DB219180F200F59542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 				C68FD9F82192D12A00C90521 /* NSString+Valid.m */,
 				C68FDA012192D12A00C90521 /* UIView+LYExtension.h */,
 				C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */,
+				C643ECB321967A1A007C060D /* UITabBar+Badge.h */,
+				C643ECB221967A1A007C060D /* UITabBar+Badge.m */,
 				C68FD9F92192D12A00C90521 /* NSDateFormatter+Category.h */,
 				C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */,
 				C68FD9FC2192D12A00C90521 /* UIImageView+RotateImgV.h */,
@@ -534,6 +539,7 @@
 				C6D16DDC21942745005C3F68 /* BaseTabBarController.m in Sources */,
 				C6D16DE721942A44005C3F68 /* BaseViewController.m in Sources */,
 				C6D16DE421942A3F005C3F68 /* BaseNavigationController.m in Sources */,
+				C643ECB421967A1B007C060D /* UITabBar+Badge.m in Sources */,
 				C68FDA072192D12A00C90521 /* UIImageView+RotateImgV.m in Sources */,
 				C68FDA062192D12A00C90521 /* NSDateFormatter+Category.m in Sources */,
 				C6D16DED21942B95005C3F68 /* MelonVideoViewController.m in Sources */,
