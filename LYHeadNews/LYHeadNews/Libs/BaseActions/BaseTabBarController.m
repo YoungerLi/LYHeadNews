@@ -10,6 +10,8 @@
 
 @interface BaseTabBarController ()<UITabBarControllerDelegate>
 
+@property (nonatomic, strong) BaseNavigationController *homeNVC;
+
 @end
 
 @implementation BaseTabBarController
@@ -20,14 +22,14 @@
     self.tabBar.translucent = NO;
     self.delegate = self;
     
-    [self addChildViewController:[HomeViewController class] title:@"首页" imageName:@"home_tabbar" selectedImageName:@"home_tabbar_press"];
+    self.homeNVC = [self addChildViewController:[HomeViewController class] title:@"首页" imageName:@"home_tabbar" selectedImageName:@"home_tabbar_press"];
     [self addChildViewController:[MelonVideoViewController class] title:@"西瓜视频" imageName:@"video_tabbar" selectedImageName:@"video_tabbar_press"];
     [self addChildViewController:[HeadNewsViewController class] title:@"微头条" imageName:@"weitoutiao_tabbar" selectedImageName:@"weitoutiao_tabbar_press"];
     [self addChildViewController:[LittleVideoViewController class] title:@"小视频" imageName:@"huoshan_tabbar" selectedImageName:@"huoshan_tabbar_press"];
 }
 
 
-- (void)addChildViewController:(Class)class title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
+- (BaseNavigationController *)addChildViewController:(Class)class title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
     UIViewController *VC = [[class alloc] init];
     BaseNavigationController *NVC = [[BaseNavigationController alloc] initWithRootViewController:VC];
@@ -42,7 +44,40 @@
     NVC.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     NVC.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self addChildViewController:NVC];
+    return NVC;
 }
 
+
+
+
+#pragma mark - UITabBarControllerDelegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    if (viewController == self.selectedViewController && self.selectedIndex == 0) {
+        
+        self.homeNVC.tabBarItem.image = [[UIImage imageNamed:@"home_tabbar_loading"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.homeNVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_loading"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+    } else {
+        self.homeNVC.tabBarItem.image = [[UIImage imageNamed:@"home_tabbar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.homeNVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+    }
+    
+    return YES;
+}
+
+
+
+
+#pragma mark - %%%%%%%%%%%%%%%%%%%
+
+- (void)addAnnimation
+{
+    UIControl *tabBarButton = [self.homeNVC valueForKey:@"view"];
+    UIImageView *tabBarImageView = [tabBarButton valueForKey:@"info"];
+    
+}
 
 @end
