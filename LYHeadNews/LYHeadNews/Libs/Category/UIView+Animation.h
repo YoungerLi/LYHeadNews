@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (Animation)
 
 /** 开始旋转 */
-- (void)rotationAnimation;
+- (void)startRotationAnimation;
 
 /** 停止旋转 */
 - (void)stopRotation;

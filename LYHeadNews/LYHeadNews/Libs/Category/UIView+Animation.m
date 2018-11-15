@@ -10,7 +10,7 @@
 
 @implementation UIView (Animation)
 
-- (void)rotationAnimation
+- (void)startRotationAnimation
 {
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.fromValue = [NSNumber numberWithFloat:0];

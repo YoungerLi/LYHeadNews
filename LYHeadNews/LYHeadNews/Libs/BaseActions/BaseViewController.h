@@ -10,4 +10,9 @@
 
 @interface BaseViewController : UIViewController
 
+// 修改返回按钮
+- (void)changeBackItemWithImage:(NSString *)imageName;
+
+- (void)backAction;
+
 @end

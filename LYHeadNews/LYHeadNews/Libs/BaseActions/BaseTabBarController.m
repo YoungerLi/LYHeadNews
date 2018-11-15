@@ -11,6 +11,7 @@
 @interface BaseTabBarController ()<UITabBarControllerDelegate>
 
 @property (nonatomic, strong) BaseNavigationController *homeNVC;
+@property (nonatomic, strong) UIImageView *tabBarImageView;
 
 @end
 
@@ -55,14 +56,21 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     if (viewController == self.selectedViewController && self.selectedIndex == 0) {
-        
+        if ([self.tabBarImageView.layer animationForKey:@"rotationAnimation"]) {
+            return YES;
+        }
         self.homeNVC.tabBarItem.image = [[UIImage imageNamed:@"home_tabbar_loading"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         self.homeNVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_loading"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [self startAnimation];
         
     } else {
+        [self.tabBarImageView stopRotation];
         self.homeNVC.tabBarItem.image = [[UIImage imageNamed:@"home_tabbar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         self.homeNVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"home_tabbar_press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        
+    }
+    
+    if (viewController == self.selectedViewController) {
+        NSLog(@"刷新起来吧。。。");
     }
     
     return YES;
@@ -73,11 +81,12 @@
 
 #pragma mark - %%%%%%%%%%%%%%%%%%%
 
-- (void)addAnnimation
+- (void)startAnimation
 {
-    UIControl *tabBarButton = [self.homeNVC valueForKey:@"view"];
-    UIImageView *tabBarImageView = [tabBarButton valueForKey:@"info"];
-    
+    UIControl *tabBarButton = [self.homeNVC.tabBarItem valueForKey:@"view"];
+    UIImageView *imageView = [tabBarButton valueForKey:@"info"];
+    [imageView startRotationAnimation];
+    self.tabBarImageView = imageView;
 }
 
 @end

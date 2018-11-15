@@ -19,11 +19,27 @@
     self.view.backgroundColor = BACKGROUNDCOLOR;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.extendedLayoutIncludesOpaqueBars = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
     
+    if (self.navigationController.viewControllers.count > 1) {
+        [self changeBackItemWithImage:@"back_white"];        
+    }
 }
 
 
+
+// 修改返回按钮
+- (void)changeBackItemWithImage:(NSString *)imageName
+{
+    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+    [leftButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [leftButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [leftButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+}
+
+- (void)backAction {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 
