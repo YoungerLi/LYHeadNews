@@ -16,14 +16,12 @@
 		C65759E7219180F900F59542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65759E5219180F900F59542 /* LaunchScreen.storyboard */; };
 		C65759EA219180F900F59542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C65759E9219180F900F59542 /* main.m */; };
 		C65759F4219199D100F59542 /* AppDelegate+RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65759F2219199D100F59542 /* AppDelegate+RootController.m */; };
-		C683DD4C219BC22F003BB087 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C683DD4B219BC22F003BB087 /* SecondViewController.m */; };
 		C683DD50219C1E33003BB087 /* back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD4E219C1E33003BB087 /* back_white@2x.png */; };
 		C683DD51219C1E33003BB087 /* back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD4F219C1E33003BB087 /* back_white@3x.png */; };
 		C683DD54219C1E3F003BB087 /* back_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD52219C1E3F003BB087 /* back_gray@2x.png */; };
 		C683DD55219C1E3F003BB087 /* back_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD53219C1E3F003BB087 /* back_gray@3x.png */; };
 		C683DD58219C1E45003BB087 /* back_black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD56219C1E45003BB087 /* back_black@3x.png */; };
 		C683DD59219C1E45003BB087 /* back_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C683DD57219C1E45003BB087 /* back_black@2x.png */; };
-		C683DD5C219C2888003BB087 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C683DD5B219C2888003BB087 /* ThirdViewController.m */; };
 		C68FDA032192D12A00C90521 /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9F82192D12A00C90521 /* NSString+Valid.m */; };
 		C68FDA042192D12A00C90521 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FB2192D12A00C90521 /* Tools.m */; };
 		C68FDA052192D12A00C90521 /* UIView+LYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */; };
@@ -101,16 +99,12 @@
 		C65759F1219197F700F59542 /* LYHeadNews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYHeadNews.pch; sourceTree = "<group>"; };
 		C65759F2219199D100F59542 /* AppDelegate+RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootController.m"; sourceTree = "<group>"; };
 		C65759F3219199D100F59542 /* AppDelegate+RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootController.h"; sourceTree = "<group>"; };
-		C683DD4A219BC22F003BB087 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		C683DD4B219BC22F003BB087 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C683DD4E219C1E33003BB087 /* back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_white@2x.png"; sourceTree = "<group>"; };
 		C683DD4F219C1E33003BB087 /* back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_white@3x.png"; sourceTree = "<group>"; };
 		C683DD52219C1E3F003BB087 /* back_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_gray@2x.png"; sourceTree = "<group>"; };
 		C683DD53219C1E3F003BB087 /* back_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_gray@3x.png"; sourceTree = "<group>"; };
 		C683DD56219C1E45003BB087 /* back_black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_black@3x.png"; sourceTree = "<group>"; };
 		C683DD57219C1E45003BB087 /* back_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_black@2x.png"; sourceTree = "<group>"; };
-		C683DD5A219C2888003BB087 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		C683DD5B219C2888003BB087 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		C68FD9F82192D12A00C90521 /* NSString+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Valid.m"; sourceTree = "<group>"; };
 		C68FD9F92192D12A00C90521 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
 		C68FD9FA2192D12A00C90521 /* LYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
@@ -217,10 +211,7 @@
 				C68FD9F62192D0EF00C90521 /* Classes */,
 				C68FD9F52192D0DA00C90521 /* Resource */,
 				C68FD9F42192D0C400C90521 /* Libs */,
-				C65759DA219180F200F59542 /* AppDelegate.h */,
-				C65759DB219180F200F59542 /* AppDelegate.m */,
-				C65759F3219199D100F59542 /* AppDelegate+RootController.h */,
-				C65759F2219199D100F59542 /* AppDelegate+RootController.m */,
+				C65E50C3219D629A00B4D4FB /* AppDelegate */,
 				C65759F0219184CB00F59542 /* Supporting Files */,
 			);
 			path = LYHeadNews;
@@ -236,6 +227,17 @@
 				C65759F1219197F700F59542 /* LYHeadNews.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C65E50C3219D629A00B4D4FB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C65759DA219180F200F59542 /* AppDelegate.h */,
+				C65759DB219180F200F59542 /* AppDelegate.m */,
+				C65759F3219199D100F59542 /* AppDelegate+RootController.h */,
+				C65759F2219199D100F59542 /* AppDelegate+RootController.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 		C683DD4D219C1E20003BB087 /* Common */ = {
@@ -319,10 +321,6 @@
 			children = (
 				C6D16DE821942AAC005C3F68 /* HomeViewController.h */,
 				C6D16DE921942AAC005C3F68 /* HomeViewController.m */,
-				C683DD4A219BC22F003BB087 /* SecondViewController.h */,
-				C683DD4B219BC22F003BB087 /* SecondViewController.m */,
-				C683DD5A219C2888003BB087 /* ThirdViewController.h */,
-				C683DD5B219C2888003BB087 /* ThirdViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -589,10 +587,8 @@
 				C65759F4219199D100F59542 /* AppDelegate+RootController.m in Sources */,
 				C6D16DF021942BD1005C3F68 /* HeadNewsViewController.m in Sources */,
 				C6D16DF3219433D1005C3F68 /* LittleVideoViewController.m in Sources */,
-				C683DD4C219BC22F003BB087 /* SecondViewController.m in Sources */,
 				C68FDA042192D12A00C90521 /* Tools.m in Sources */,
 				C68FDA052192D12A00C90521 /* UIView+LYExtension.m in Sources */,
-				C683DD5C219C2888003BB087 /* ThirdViewController.m in Sources */,
 				C65759DC219180F200F59542 /* AppDelegate.m in Sources */,
 				C68FDA032192D12A00C90521 /* NSString+Valid.m in Sources */,
 				C6D16DEA21942AAC005C3F68 /* HomeViewController.m in Sources */,

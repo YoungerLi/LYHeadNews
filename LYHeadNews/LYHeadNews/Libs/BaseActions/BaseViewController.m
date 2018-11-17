@@ -8,7 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()<UIGestureRecognizerDelegate>
+@interface BaseViewController ()
+
+@property (nonatomic, strong) UIPanGestureRecognizer *pan;
 
 @end
 
@@ -20,14 +22,19 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.extendedLayoutIncludesOpaqueBars = YES;
     
+    //修改返回按钮
     if (self.navigationController.viewControllers.count > 1) {
-        [self changeBackItemWithImage:@"back_white"];        
+        [self changeBackItemWithImage:@"back_white"];
     }
+    
+    //创建右滑返回手势
+    [self createPanGesture];
 }
 
 
 
-// 修改返回按钮
+#pragma mark - 修改返回按钮
+
 - (void)changeBackItemWithImage:(NSString *)imageName
 {
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
@@ -40,6 +47,25 @@
 - (void)backAction {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+
+
+
+#pragma mark - 创建右滑返回手势
+
+- (void)createPanGesture
+{
+    id target = self.navigationController.interactivePopGestureRecognizer.delegate;
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:NSSelectorFromString(@"handleNavigationTransition:")];
+    pan.delegate = self;
+    _pan = pan;
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+}
+
+- (void)addPanGesture {
+    [self.view addGestureRecognizer:_pan];
+}
+
 
 
 

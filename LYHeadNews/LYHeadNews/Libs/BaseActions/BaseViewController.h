@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController : UIViewController<UIGestureRecognizerDelegate>
 
 // 修改返回按钮
 - (void)changeBackItemWithImage:(NSString *)imageName;
-
 - (void)backAction;
+
+// 添加右滑返回手势
+- (void)addPanGesture;
 
 @end
