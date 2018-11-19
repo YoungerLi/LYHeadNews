@@ -26,6 +26,8 @@
 		C68FDA042192D12A00C90521 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FB2192D12A00C90521 /* Tools.m */; };
 		C68FDA052192D12A00C90521 /* UIView+LYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD9FD2192D12A00C90521 /* UIView+LYExtension.m */; };
 		C68FDA062192D12A00C90521 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */; };
+		C6CF14F5219FF148005806DD /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF14F4219FF148005806DD /* HomeDetailViewController.m */; };
+		C6CF14FD21A014A6005806DD /* HomeNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF14FC21A014A6005806DD /* HomeNavigationBar.m */; };
 		C6D16DDC21942745005C3F68 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D16DDB21942745005C3F68 /* BaseTabBarController.m */; };
 		C6D16DE421942A3F005C3F68 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D16DE321942A3F005C3F68 /* BaseNavigationController.m */; };
 		C6D16DE721942A44005C3F68 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D16DE621942A44005C3F68 /* BaseViewController.m */; };
@@ -114,6 +116,10 @@
 		C68FD9FF2192D12A00C90521 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		C68FDA002192D12A00C90521 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
 		C68FDA012192D12A00C90521 /* UIView+LYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYExtension.h"; sourceTree = "<group>"; };
+		C6CF14F3219FF148005806DD /* HomeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		C6CF14F4219FF148005806DD /* HomeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		C6CF14FB21A014A6005806DD /* HomeNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavigationBar.h; sourceTree = "<group>"; };
+		C6CF14FC21A014A6005806DD /* HomeNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationBar.m; sourceTree = "<group>"; };
 		C6D16DDA21942745005C3F68 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		C6D16DDB21942745005C3F68 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		C6D16DE221942A3E005C3F68 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -316,11 +322,54 @@
 			path = BaseActions;
 			sourceTree = "<group>";
 		};
-		C6D16DDD219427BB005C3F68 /* Home */ = {
+		C6CF14F6219FF159005806DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C6D16DE821942AAC005C3F68 /* HomeViewController.h */,
 				C6D16DE921942AAC005C3F68 /* HomeViewController.m */,
+				C6CF14F3219FF148005806DD /* HomeDetailViewController.h */,
+				C6CF14F4219FF148005806DD /* HomeDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6CF14F7219FF3CB005806DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6CF14F8219FF3D8005806DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6CF14F9219FF3E0005806DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6CF14FA21A0147F005806DD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C6CF14FB21A014A6005806DD /* HomeNavigationBar.h */,
+				C6CF14FC21A014A6005806DD /* HomeNavigationBar.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C6D16DDD219427BB005C3F68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C6CF14F6219FF159005806DD /* Controller */,
+				C6CF14F7219FF3CB005806DD /* Model */,
+				C6CF14F9219FF3E0005806DD /* View */,
+				C6CF14F8219FF3D8005806DD /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -355,6 +404,7 @@
 		C6D16DE1219429A7005C3F68 /* ThirdParts */ = {
 			isa = PBXGroup;
 			children = (
+				C6CF14FA21A0147F005806DD /* Common */,
 			);
 			path = ThirdParts;
 			sourceTree = "<group>";
@@ -576,7 +626,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CF14FD21A014A6005806DD /* HomeNavigationBar.m in Sources */,
 				C6D16DDC21942745005C3F68 /* BaseTabBarController.m in Sources */,
+				C6CF14F5219FF148005806DD /* HomeDetailViewController.m in Sources */,
 				C6D16DE721942A44005C3F68 /* BaseViewController.m in Sources */,
 				C6D16DE421942A3F005C3F68 /* BaseNavigationController.m in Sources */,
 				C643ECBD2196E35A007C060D /* UIView+Animation.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeNavigationBar.h"
 
 @interface HomeViewController ()
 
